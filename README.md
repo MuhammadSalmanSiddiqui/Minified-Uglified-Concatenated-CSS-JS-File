@@ -35,6 +35,9 @@ Remember to use sudo on mac and Linux.
 NOTE: 
 ----
 Above, you will change the path of the files which you want to copy in the dist folder as per your choice which are not           compressable.
+
+NEXT:
+----
   
 Compressing and Minifying Images:
 --------------------------------
@@ -55,6 +58,9 @@ Remember to use sudo on mac and Linux. NOTE: Some students have encountered issu
 NOTE:
 ----
 Above, you will give the path of the folder containing full of images which you want to minify and then those minified images will get save into dist/img folder.
+
+NEXT:
+----
    
 --> Then, install the usemin-cli, cssmin, uglifyjs and htmlmin NPM packages as follows:
 
@@ -68,6 +74,9 @@ Above, you will give the path of the folder containing full of images which you 
 NOTE:
 ----
 Above, you will minify your html pages and save them individually into dist folder. You can  add/del more html pages path by using && into above scripts if you have more or less than 3 html pages.
+
+NEXT:
+----
     
 --> Open index.html and surround the css links inclusion code as follows:
 
