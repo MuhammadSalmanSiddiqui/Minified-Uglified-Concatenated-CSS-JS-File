@@ -13,11 +13,11 @@ Cleaning up a Distribution Folder:
 ---------------------------------
 --> Install the rimraf npm module by typing the following at the prompt:
 
- npm install --save-dev rimraf@2.6.2
+    npm install --save-dev rimraf@2.6.2
  
 --> Then, set up the following script:
 
-  "clean": "rimraf dist",
+    "clean": "rimraf dist",
   
 Copying Files:
 --------------
@@ -25,13 +25,16 @@ Your project uses font-awesome fonts or any such files. These need to be copied 
 
 --> Install the copyfiles NPM module globally as follows:
 
-  npm -g install copyfiles@2.0.0
+    npm -g install copyfiles@2.0.0
   
 Remember to use sudo on mac and Linux.
 
 --> Then set up the following script:
 
-  "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",    //NOTE: Here, you will change the path of the files which                                                                                        you want to copy in the dist folder as per your                                                                                          choice which are not compressable.
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",                                                                
+NOTE: 
+----
+Above, you will change the path of the files which you want to copy in the dist folder as per your choice which are not           compressable.
   
 Compressing and Minifying Images:
 --------------------------------
@@ -39,24 +42,32 @@ We use the imagemin-cli NPM module to help us to compress our images to reduce t
 
 --> Install the imagemin-cli module as follows:
 
-   npm -g install imagemin-cli@3.0.0
+    npm -g install imagemin-cli@3.0.0
    
 Remember to use sudo on mac and Linux. NOTE: Some students have encountered issues with imagemin-cli not installing its plugins due to issues with global permissions on Mac. In that case try:
 
-   sudo npm install -g imagemin-cli@3.0.0 --unsafe-perm=true --allow-root
+    sudo npm install -g imagemin-cli@3.0.0 --unsafe-perm=true --allow-root
    
 ---> Then set up the following script:
 
-   "imagemin": "imagemin img/* --out-dir='dist/img'",  //NOTE: Here you will give the path of the folder containing full of images which                                                                you want to minify and then those minified images will get save into                                                                    dist/img folder.
+    "imagemin": "imagemin img/* --out-dir='dist/img'",                                                                              
+    
+NOTE:
+----
+Above, you will give the path of the folder containing full of images which you want to minify and then those minified images will get save into dist/img folder.
    
 --> Then, install the usemin-cli, cssmin, uglifyjs and htmlmin NPM packages as follows:
 
-   npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7
+    npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7
    
 --> Add the following two scripts to the package.json file:
 
-   "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o       dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin" //Here you will minify your html pages and save                                                                                           them individually into dist folder. You can                                                                                             add/del more html pages path by using && into                                                                                           above scripts if you have more or less than 3                                                                                           html pages.
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o       dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin" 
+    
+NOTE:
+----
+Above, you will minify your html pages and save them individually into dist folder. You can  add/del more html pages path by using && into above scripts if you have more or less than 3 html pages.
     
 --> Open index.html and surround the css links inclusion code as follows:
 
