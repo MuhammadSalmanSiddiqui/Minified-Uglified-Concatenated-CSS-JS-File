@@ -34,7 +34,7 @@ Remember to use sudo on mac and Linux.
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",                                                                
 NOTE: 
 ----
-Above, you will change the path of the files which you want to copy in the dist folder as per your choice which are not           compressable.
+Above, you will change the path of the files that you want to copy to the dist folder as you choose, which can not be compressed.
 
 NEXT:
 ----
@@ -57,7 +57,7 @@ Remember to use sudo on mac and Linux. NOTE: Some students have encountered issu
     
 NOTE:
 ----
-Above, you will change the path of the folder containing full of images which you want to minify and then those minified images will get save into dist/img folder.
+Above, you'll change the path of the folder containing full images that you want to minimize, and then those thumbnails will be saved to the dist / img folder.
 
 NEXT:
 ----
@@ -73,7 +73,7 @@ NEXT:
     
 NOTE:
 ----
-Above, you will minify your html pages and save them individually into dist folder. You can add/del more html pages path by using && into above scripts if you have more or less than 3 html pages.
+Above, you will minimize your html pages and save them individually to the dist folder. You can add / delete the HTML page path if you have more or less than 3 HTML pages.
 
 NEXT:
 ----
