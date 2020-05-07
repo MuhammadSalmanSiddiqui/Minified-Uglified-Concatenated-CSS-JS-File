@@ -57,7 +57,7 @@ Remember to use sudo on mac and Linux. NOTE: Some students have encountered issu
     
 NOTE:
 ----
-Above, you will give the path of the folder containing full of images which you want to minify and then those minified images will get save into dist/img folder.
+Above, you will change the path of the folder containing full of images which you want to minify and then those minified images will get save into dist/img folder.
 
 NEXT:
 ----
@@ -73,7 +73,7 @@ NEXT:
     
 NOTE:
 ----
-Above, you will minify your html pages and save them individually into dist folder. You can  add/del more html pages path by using && into above scripts if you have more or less than 3 html pages.
+Above, you will minify your html pages and save them individually into dist folder. You can add/del more html pages path by using && into above scripts if you have more or less than 3 html pages.
 
 NEXT:
 ----
